@@ -725,22 +725,7 @@ function Tasks() {
           </p>
         </div>
       </div>
-      <div className="questionsCard">
-        <div className="questFront">front</div>
-        <div className="questBack">back</div>
-      </div>
-      <div className="questionsCard">
-        <div className="questFront">front</div>
-        <div className="questBack">back</div>
-      </div>
-      <div className="questionsCard">
-        <div className="questFront">front</div>
-        <div className="questBack">back</div>
-      </div>
-      <div className="questionsCard">
-        <div className="questFront">front</div>
-        <div className="questBack">back</div>
-      </div>
+
       <a
         href="https://www.youtube.com/live/y2m9D5hXzGY"
         target="_blank"
