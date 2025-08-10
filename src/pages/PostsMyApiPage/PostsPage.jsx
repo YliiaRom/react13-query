@@ -9,13 +9,13 @@ const PostsPage = () => {
 
   return (
     <div>
-      <Link to="/posts-my-api/posts/edit">
+      <Link to="/posts-my-api/postss/edit/:id?">
         <button>➕ Додати новий пост</button>
       </Link>
       {/* <h2>Сторінка постів</h2> */}
       <PostDetails postId={selectedPostId} />
       <PostsList onSelect={setSelectedPostId} />
-      <Link to="/posts-my-api/posts/edit">
+      <Link to="/posts-my-api/postss/edit/:id?">
         <button>➕ Додати новий пост</button>
       </Link>
       <Outlet />
