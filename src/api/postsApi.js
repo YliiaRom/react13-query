@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const postsApi = createApi({
   reducerPath: "postsApi",
 
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3333/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://bk-query-posts.onrender.com" }),
   tagTypes: ["Post", "Posts"],
   endpoints: (build) => ({
     // Список постів з пагінацією (build.query)
