@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 function PaymentsList() {
   const paymentsItems = useSelector((state) => state.payments.paymentsList);
-  console.log(paymentsItems);
+
   return (
     <div>
       {paymentsItems.length > 0 ? (

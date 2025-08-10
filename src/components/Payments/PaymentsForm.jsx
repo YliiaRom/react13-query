@@ -18,7 +18,7 @@ function PaymentsForm({ categoriesList }) {
   };
   return (
     <div className="descriptionWrap">
-      <div className="description">
+      <div>
         <div>
           Money:
           <label>

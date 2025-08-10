@@ -6,8 +6,8 @@ function PaymentsManager() {
   return (
     <div className="sectionWrap">
       <h2>Manager Money</h2>
-      <PaymentsForm categoriesList={categoriesList} />
       <PaymentsList />
+      <PaymentsForm categoriesList={categoriesList} />
     </div>
   );
 }

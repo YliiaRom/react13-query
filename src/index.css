@@ -694,7 +694,13 @@ select {
   box-shadow: -10px -10px 10px #fff, 10px 10px 10px #999999b7;
   margin-bottom: 20px;
   padding: 1em 2em;
+  transition: 0.3s;
 }
+.mainNavBar li:hover {
+  box-shadow: -3px -3px 3px #fff, 3px 3px 3px #999999b7;
+  margin-bottom: 20px;
+}
+
 /* ----postData */
 .likesBody {
   display: flex;
@@ -792,4 +798,262 @@ textarea {
 }
 .pgWrap {
   margin: 20px auto;
+}
+/* ---middlewares */
+.blackBox {
+  background-color: #201f1f;
+  color: #ffffffb0;
+}
+.blackBox p {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px dotted #f09d0361;
+}
+.accent {
+  color: #f09d03ab;
+}
+/* -------pokemon */
+.pockemonDetail {
+  background-color: #201f1f;
+  color: #ffffffb0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  box-shadow: -10px -10px 10px #fff, 10px 10px 10px #999,
+    inset -10px -10px 10px #000000b1, inset 10px 10px 10px #636363a1;
+}
+.pockemonDetail img {
+  /* border: 10px solid #999; */
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  box-shadow: -10px -10px 10px #3434345f, 10px 10px 10px #00000082;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.pockemonList {
+  background-color: #201f1f;
+  color: #ffffffb0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 5px;
+}
+.pockemonList li {
+  /* box-shadow: 10px 0px 15px #0000007e; */
+  border-radius: 10px;
+}
+/* ========tasks */
+.tasksBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+  perspective: 8000px;
+}
+.questionsCard {
+  position: relative;
+  width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  height: fit-content;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+
+  border-radius: 10px;
+  transform-origin: center;
+}
+.questFront,
+.questBack {
+  position: absolute;
+  inset: 0;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: inset 10px 10px 10px #ffffff33, inset -10px -10px 10px #0000005a;
+}
+.questFront {
+  background-color: #999;
+  color: #fff;
+}
+.questBack {
+  background-color: #343333;
+  color: #ffffffb0;
+  transform: rotateY(180deg);
+}
+.questionsCard:hover {
+  transform: rotateY(180deg);
+  z-index: 9000;
+}
+.accent {
+  color: #f09d03ab;
+}
+.postsLisQueryBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.tasksBox:has(.questionsCard:hover) .questionsCard:not(:hover) {
+  opacity: 0.9 !important;
+  /* transition: 0.2s !important; */
+  transform: scale(0.8) !important;
+}
+/* ----Infinite */
+.postsInfinite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.postsInfinite li {
+  box-shadow: -2px -2px 3px #fff, 2px 2px 3px #999;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.pgBtnQuery {
+  display: flex;
+  gap: 10px;
+}
+/* -------------------myAPI */
+.headerQ {
+  background-color: #282828;
+  color: #cecccc;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+.headerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.infinityPostList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.infinityPostList li {
+  box-shadow: -2px -2px 3px #fff, 2px 3px 4px #999;
+  border-radius: 10px;
+  padding: 10px;
+}
+.listScroll {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.listScroll li {
+  width: 100%;
+  padding: 20px 10px;
+  box-shadow: -2px -2px 3px #fff, 2px 3px 4px #999;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btnAction {
+  padding: 10px 15px;
+  box-shadow: -10px -10px 10px #fff, 10px 10px 10px #999;
+}
+.btnActionBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.btnActionBox button {
+  box-shadow: -10px -10px 10px #ffffff77, 10px 10px 10px #999;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.btnActionBox button:hover {
+  box-shadow: -5px -5px 5px #ffffff77, 3px 3px 3px #999;
+  color: #f09d03ab;
+}
+.postBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.likesBox {
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+/* ---formQuery */
+.formQuery {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  background-color: #999;
+  border-radius: 10px;
+  background: radial-gradient(#cfcdcd 30%, #00000065 100%);
+}
+.formQuery label {
+  width: 100%;
+  box-shadow: none;
+  padding: 7px;
+  height: fit-content;
+  gap: 5px;
+  color: #9d6703;
+}
+.formQuery textarea {
+  padding: 10px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #fff;
+  min-height: 200px;
+  height: fit-content;
+  color: #000000be;
+}
+.formQuery .editTitle textarea {
+  min-height: 30px;
+}
+.formQuery label input {
+  margin: 0;
+  box-shadow: none;
+  padding: 10px 15px;
+}
+.formQuery .mainBtn {
+  border-radius: 30px;
+  border: 2px solid #999;
+  padding: 1em 2em;
+  color: #4f4e4efe;
+  background: radial-gradient(circle, #ffdfa7, #644916);
+  /* box-shadow: -10px -10px 10px #ffffff18, 10px 10px 10px #999999,
+    inset 10px 10px 10px #ffffff85, inset -10px -10px 10px #00000048; */
+  box-shadow: none;
+  box-shadow: 2px 4px 5px #272525ba, 8px 8px 16px #999, -3px -4px 5px #ffffff5f;
+}
+.formQuery .mainBtn:hover {
+  background: radial-gradient(circle, #fbeacc, #5c5c5a);
 }

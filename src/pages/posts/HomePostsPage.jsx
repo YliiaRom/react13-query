@@ -28,6 +28,7 @@ function HomePostsPage() {
   const changeNumberPage = (numberPage) => {
     dispatch(setCurrentPage(numberPage));
   };
+  console.log(postsList);
   return (
     <>
       <hr />
